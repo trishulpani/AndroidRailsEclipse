@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="leaveDetails">leaveDetails</string>
+    <string name="hello">Hello World, ViewLeave!</string>
+    <string name="app_name">Leaveasy</string>
+	<string name="viewBtn">View Leave Info</string>
+	<string name="app_desc">Welcome to LeavEasy</string>
+	<string name="viewBtnHandler">viewLeaveDetailsHandler</string>
+	<string name="leaveInfo"></string>
+	<string name="home">Home</string>
+	<string name="applyLeave">ApplyLeave</string>
+	<string name="applyForLeave">Apply For Leave</string>
+	<string name="applyLeaveHandler">changeViewForLeaveApplication</string>
+	<string name="cancelLeaveApplicationHandler">changeViewForHome</string>
+	<string name="submitLeaveApplicationHandler">submitApplication</string>
+</resources>

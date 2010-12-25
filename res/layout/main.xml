@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher android:id="@+id/ViewSwitcher01" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout android:id="@+id/home"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" android:text="@string/app_desc"/>
+
+<TextView android:text="@+string/leaveInfo" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/leaveDetails"></TextView>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/viewLeave" android:text="@string/viewBtn" android:onClick="@string/viewBtnHandler">View Info</Button>
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/applyLeave" android:onClick="@string/applyLeaveHandler" android:text="@string/applyForLeave"></Button>
+</LinearLayout>
+
+
+
+<AbsoluteLayout
+android:id="@+id/widget0"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<TextView
+android:id="@+id/widget45"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="From date"
+android:layout_x="10px"
+android:layout_y="32px"
+>
+</TextView>
+<TextView
+android:id="@+id/widget46"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="To Date"
+android:layout_x="11px"
+android:layout_y="70px"
+>
+</TextView>
+<RadioGroup
+android:id="@+id/rgLeaveType"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_x="13px"
+android:layout_y="116px"
+>
+<RadioButton
+android:id="@+id/rbCasualLeave"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Casual Leave"
+>
+</RadioButton>
+<RadioButton
+android:id="@+id/rbSickLeave"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Sick Leave"
+>
+</RadioButton>
+</RadioGroup>
+<EditText
+android:id="@+id/txtFromDate"
+android:layout_width="168px"
+android:layout_height="39px"
+android:textSize="18sp"
+android:layout_x="98px"
+android:layout_y="24px"
+>
+</EditText>
+<EditText
+android:id="@+id/txtToDate"
+android:layout_width="168px"
+android:layout_height="39px"
+android:textSize="18sp"
+android:layout_x="96px"
+android:layout_y="65px"
+>
+</EditText>
+<EditText
+android:id="@+id/contactDuringLeave"
+android:layout_width="154px"
+android:layout_height="61px"
+android:textSize="18sp"
+android:layout_x="114px"
+android:layout_y="225px"
+>
+</EditText>
+<TextView
+android:id="@+id/widget53"
+android:layout_width="100px"
+android:layout_height="wrap_content"
+android:text="Contact during Leave"
+android:layout_x="13px"
+android:layout_y="228px"
+>
+</TextView>
+<Button
+android:id="@+id/submitLeave"
+android:layout_width="105px"
+android:layout_height="wrap_content"
+android:text="Submit"
+android:layout_x="16px"
+android:layout_y="317px"
+android:onClick="@+string/submitLeaveApplicationHandler"
+>
+</Button>
+<Button
+android:id="@+id/widget55"
+android:layout_width="114px"
+android:layout_height="wrap_content"
+android:text="Cancel"
+android:layout_x="141px"
+android:layout_y="317px"
+android:onClick="@+string/cancelLeaveApplicationHandler"
+>
+</Button>
+</AbsoluteLayout>
+</ViewSwitcher>
+
